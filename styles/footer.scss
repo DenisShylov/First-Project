@@ -1,11 +1,11 @@
 .footer {
-  margin-top: auto;
   display: flex;
   flex-direction: column;
+  margin-top: auto;
 
   &_description {
-    width: 360px;
     display: none;
+    width: 360px;
     line-height: 26px;
     font-size: 18px;
     margin-top: 26px;
@@ -17,24 +17,24 @@
   }
 
   &__navigation {
-    margin: 0;
     display: flex;
     flex-direction: column;
+    margin: 0;
 
     @include for-large-up {
-      width: 1140px;
-      margin: 0 auto;
-      height: 338px;
       display: flex;
       flex-direction: row;
+      width: 1140px;
+      height: 338px;
+      margin: 0 auto;
     }
   }
 
   &__line {
-    border-top: 1px solid #2b292d;
-    margin: 0;
+    border-top: 1px solid $text-color-dark;
     width: 100%;
     opacity: 0.1;
+    margin: 0;
     margin-top: 40px;
 
     @include for-large-up {
@@ -69,15 +69,15 @@
 }
 
 .additional-navigation {
-  margin-left: 15px;
-  margin-right: 15px;
   display: flex;
   flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
 
   @include for-large-up {
+    flex-direction: row;
     margin-top: 60px;
     margin-left: auto;
-    flex-direction: row;
   }
 
   &__column {
@@ -97,7 +97,7 @@
     font-weight: bold;
     font-size: 22px;
     line-height: 28px;
-    color: #2b292d;
+    color: $text-color-dark;
     margin: 0;
   }
 
@@ -114,18 +114,17 @@
 
 @media screen and (min-width: 400px) {
   .footer-links {
-    margin: 0;
-    height: 50px;
     flex-direction: row;
     align-items: center;
+    height: 50px;
     margin: 0 auto;
   }
 }
 
 .footer-links {
-  margin-left: 15px;
   display: flex;
   flex-direction: column;
+  margin-left: 15px;
 
   @include for-large-up {
     flex-direction: row;

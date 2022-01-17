@@ -1,8 +1,9 @@
 .audience {
-  background: #edf8fb;
+  background: $color-light;
   padding: 50px 15px;
   @include for-large-up {
     padding: 110px 130px;
+    z-index: 1;
   }
   &__subtitle {
     font-weight: 700;
@@ -18,7 +19,8 @@
     text-align: center;
     letter-spacing: -0.357143px;
     color: $text-color-dark;
-    margin: 17px 15px 0 15px;
+    margin-top: 17px;
+    margin-bottom: 0;
 
     @include for-large-up {
       font-size: 56px;
@@ -34,7 +36,7 @@
     line-height: 34px;
     text-align: center;
     color: $text-color-dark;
-    margin: 18px 15px 0 15px;
+    margin: 17px 15px 0 15px;
 
     @include for-large-up {
       width: 555px;
@@ -46,12 +48,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px 15px 0 15px;
+    margin-top: 30px;
 
     @include for-large-up {
-      justify-content: center;
       flex-direction: row;
-      margin: 34px 0 0 0;
+      justify-content: center;
+      margin-top: 34px;
     }
   }
   &__button {
@@ -91,15 +93,16 @@
 
     &-item {
       min-width: 100%;
-      min-height: 300px;
+      height: 300px;
       text-align: center;
       background: #fff;
       border-radius: 8px;
-      margin: 15px 15px 0 15px;
+      margin: 7px;
+      box-shadow: $color-box-shadow;
 
       @include for-large-up {
         min-width: 262px;
-        margin-top: 111px;
+        margin: 111px 30px 0 0;
       }
       &:hover {
         background-color: $text-color-blue;
@@ -116,7 +119,7 @@
       }
     }
     &-image {
-      margin: 22px 76px;
+      margin: 22px auto;
     }
     &-caption {
       font-weight: 700;
@@ -124,7 +127,6 @@
       line-height: 28px;
       text-align: center;
       color: $text-color-dark;
-      margin: 22px 20px 33px 20px;
     }
   }
 }
