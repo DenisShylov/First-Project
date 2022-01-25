@@ -7,7 +7,7 @@
   padding-left: 15px;
 
   @include for-large-up {
-    background-color: #f3c6bd;
+    background-color: $background-color-header;
     width: 1140px;
     height: 62px;
     margin: auto;
@@ -25,7 +25,7 @@
   &__menu-button {
     width: 58px;
     border: none;
-    border-left: 1px solid #00000026;
+    border-left: 1px solid $border-color-light-grey;
     height: 100%;
     margin-left: auto;
     background: transparent;
@@ -51,7 +51,7 @@
 }
 
 .action-button {
-  background-color: #3040c4;
+  background-color: $text-color-blue;
   line-height: 13px;
   width: 160px;
   height: 48px;
@@ -73,7 +73,7 @@
   }
 
   &__item {
-    color: #2b292d;
+    color: $text-color-dark;
     text-decoration: none;
     line-height: 25px;
     font-size: 18px;
@@ -125,7 +125,7 @@
       display: block;
       line-height: 25px;
       font-size: 18px;
-      color: #2b292d;
+      color: $text-color-dark;
       opacity: 0.6;
     }
   }
@@ -138,7 +138,7 @@
 }
 
 .top-section {
-  background-color: #f3c6bd;
+  background-color: $background-color-header;
 
   @include for-large-up {
     padding-top: 39px;
