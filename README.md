@@ -1,4 +1,4 @@
-[Link site](https://denisshylov.github.io/startup-website/)
+[Link site](https://roaring-eclair-f4c9ec.netlify.app/)
 
 Layout supports mobile (up-to-320) and desktop (up-to-1400) versions
 
